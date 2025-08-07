@@ -1,6 +1,6 @@
 .uq-container-inline {
   height: 100vh;
-  background: #9dcfb8;;
+  background: #dce5e1;;
   padding: 15px;
   color: #269b57;
  width: 98%;
@@ -260,7 +260,7 @@
 
 
 .uq-box {
-  background: #2f855a;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;

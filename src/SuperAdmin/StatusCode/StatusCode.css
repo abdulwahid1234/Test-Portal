@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  background: #9dcfb8;
+  background: #dce5e1;
   padding: 0px 5px;
   font-family: sans-serif;
 }
@@ -33,7 +33,7 @@
 
 .status-label {
   font-size: 1.06rem;
-  color: #247e4c;
+  color: #2f855a;
   font-weight: 700;
   margin-bottom: 8px;
   display: block;
@@ -54,7 +54,7 @@
 }
 
 .status-input:focus {
-  border: 2px solid #269b57;
+  border: 2px solid #2f855a;
   background: #f4fef6;
 }
 
@@ -64,7 +64,7 @@
   padding: 13px 0;
   font-size: 1.12rem;
   font-weight: 700;
-  background: #269b57;
+  background: #2f855a;
   color: #fff;
   border: none;
   border-radius: 11px;
@@ -80,7 +80,7 @@
 .status-table-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #269b57;
+  color: #2f855a;
   margin: 32px 0 13px 0;
 }
 
@@ -134,7 +134,7 @@
   }
 }
 .codes-link:hover {
-  color: #269b57 !important;
+  color: #2f855a !important;
 }
 
 .modal-bg {
@@ -165,7 +165,7 @@
   top: 14px;
   font-size: 1.6rem;
   background: none;
-  color: #269b57;
+  color: #2f855a;
   border: none;
   cursor: pointer;
   font-weight: 700;
@@ -212,7 +212,7 @@
 /* --- Row hover for codes table --- */
 .status-table tr:hover td {
   background: #e0faeb !important;
-  color: #218e46;
+  color: #2f855a;
   transition: background 0.16s, color 0.16s;
 }
 
@@ -223,7 +223,7 @@
 
 /* Table header: subtle hover for interactivity */
 .status-table th:hover {
-  background: #34be77 !important;
+  background: #2f855a !important;
   color: #fff !important;
   transition: background 0.12s, color 0.12s;
 }
@@ -237,7 +237,7 @@
   font-weight: 700;
 }
 .codes-link:hover {
-  color: #269b57 !important;
+  color: #2f855a !important;
   text-shadow: 0 2px 7px #31b68526;
   filter: brightness(1.08);
 }
@@ -248,7 +248,7 @@
   box-shadow: 0 2px 10px #31b68521;
 }
 .status-save-btn:hover, .status-save-btn:focus {
-  background: #20723b !important;
+  background: #2f855a !important;
   box-shadow: 0 5px 18px #247e4c15;
   transform: translateY(-2px) scale(1.03);
 }
@@ -264,7 +264,7 @@
 /* In the modal, highlight unused codes on hover */
 .modal-card table tr:hover td {
   background: #e8f7ee !important;
-  color: #1ba858;
+  color: #2f855a;
   transition: background 0.15s, color 0.15s;
 }
 

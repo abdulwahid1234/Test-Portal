@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  background: #9dcfb8;
+  background: #dce5e1;
   padding: 0px 20px;
   font-family: sans-serif;
 }
@@ -27,7 +27,7 @@
 
 .admin-add-btn {
   margin-bottom: 10px;
-  background: #269b57;
+  background: #2f855a;
   color: #fff;
   font-weight: 600;
   padding: 8px 20px;
@@ -66,7 +66,7 @@
   outline: none;
   font-size: 1.04rem;
   background: #fff;
-  color: #269b57;
+  color: #2f855a;
   font-weight: 500;
   flex: 1 1 140px;
   min-width: 120px;
@@ -75,7 +75,7 @@
 
 .admin-input:focus,
 .admin-select:focus {
-  border: 2px solid #269b57;
+  border: 2px solid #2f855a;
   background: #f4fef6;
 }
 
@@ -87,7 +87,7 @@
 
 .admin-save-btn {
   padding: 7px 22px;
-  background: #269b57;
+  background: #2f855a;
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -97,14 +97,14 @@
 }
 
 .admin-save-btn:hover {
-  background: #247e4c;
+  background: #2f855a;
 }
 
 .admin-cancel-btn {
   padding: 7px 14px;
   background: #fff;
-  color: #269b57;
-  border: 1.4px solid #269b57;
+  color: #2f855a;
+  border: 1.4px solid #2f855a;
   border-radius: 7px;
   font-weight: 600;
   cursor: pointer;
@@ -134,7 +134,7 @@
 }
 
 .admin-table th {
-  background: #257f49;
+  background: #2f855a;
   font-weight: 700;
   color: #f3f6f5;
 }
@@ -145,7 +145,7 @@
 
 .admin-action-btn {
   background: #f4fef6;
-  color: #269b57;
+  color: #2f855a;
   border: 1.3px solid #b2e9c8;
   border-radius: 7px;
   padding: 6px 15px;
@@ -157,7 +157,7 @@
 
 .admin-action-btn:hover {
   background: #e8f7ee;
-  border: 1.3px solid #247e4c;
+  border: 1.3px solid #2f855a;
 }
 
 .admin-delete-btn {
@@ -182,8 +182,8 @@
 
 .admin-status-verified {
   background: #e0faeb;
-  color: #22ab4f;
-  border: 1.1px solid #22ab4f;
+  color: #2f855a;
+  border: 1.1px solid #2f855a;
 }
 
 .admin-status-pending {
