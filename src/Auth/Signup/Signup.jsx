@@ -81,7 +81,7 @@ const Signup = () => {
           onChange={e => setConfirmPassword(e.target.value)}
           autoComplete="new-password"
         />
-        <select value={role} onChange={e => setRole(e.target.value)}>
+        <select className="rol" value={role} onChange={e => setRole(e.target.value)}>
           <option value="admin">Admin</option>
           <option value="superadmin">Super Admin</option>
         </select>

@@ -52,7 +52,7 @@ const Login = () => {
           onChange={e => setPassword(e.target.value)}
           autoComplete="current-password"
         />
-        <select value={role} onChange={e => setRole(e.target.value)}>
+        <select className= "rol" value={role} onChange={e => setRole(e.target.value)}>
           <option value="admin">Admin</option>
           <option value="superadmin">Super Admin</option>
         </select>
@@ -60,8 +60,17 @@ const Login = () => {
         <p>
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
+        <div>
+      <span>For SuperAdmin: akbar@gmail.com </span>
+      <br /><span>Password: qwert</span>
+      </div>
+      <br />
+      <div><span>For Admin: waleed@gmail.com </span><br />
+      <span>Password: 12345</span></div>
       </form>
+      
     </div>
+    
   );
 };
 
