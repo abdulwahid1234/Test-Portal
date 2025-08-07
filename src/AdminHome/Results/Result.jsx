@@ -193,7 +193,7 @@ const Result = () => {
           </button>
           <div className="category-select-wrap">
             <label htmlFor="category" style={{ marginRight: 7, fontWeight: 500 }}>
-              Category:
+              Test:
             </label>
             <select
               className="result-category"

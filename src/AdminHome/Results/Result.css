@@ -110,7 +110,7 @@
 }
 
 .result-table-wrap {
-  max-width: 1150px;
+  /* max-width: 1150px; */
   margin: 15px;
   background: #fff;
   border-radius: 22px;
