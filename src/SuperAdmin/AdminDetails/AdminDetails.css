@@ -1,0 +1,193 @@
+.admin-root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #9dcfb8;
+  padding: 0px 20px;
+  font-family: sans-serif;
+}
+
+.admin-main {
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 4px 22px #31b68515, 0 1.5px 8px #1ba8581c;
+  padding: 20px 20px;
+  width: 100%;
+  margin: 10px;
+}
+
+.admin-title {
+  font-weight: 700;
+  font-size: 1.42rem;
+  margin-bottom: 15px;
+  color: #2f855a;
+  letter-spacing: 0.02em;
+}
+
+.admin-add-btn {
+  margin-bottom: 10px;
+  background: #269b57;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 10px #31b68514;
+  transition: background 0.12s;
+}
+
+.admin-add-btn:hover {
+  background: #2f855a;
+}
+
+.admin-form {
+  background: #f8fdfb;
+  border: 1.3px solid #b2e9c8;
+  border-radius: 10px;
+  padding: 18px 13px;
+  margin-bottom: 18px;
+}
+
+.admin-input-row {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 13px;
+  flex-wrap: wrap;
+}
+
+.admin-input,
+.admin-select {
+  padding: 9px 10px;
+  border: 1.5px solid #b2e9c8;
+  border-radius: 7px;
+  outline: none;
+  font-size: 1.04rem;
+  background: #fff;
+  color: #269b57;
+  font-weight: 500;
+  flex: 1 1 140px;
+  min-width: 120px;
+  transition: border 0.14s;
+}
+
+.admin-input:focus,
+.admin-select:focus {
+  border: 2px solid #269b57;
+  background: #f4fef6;
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.admin-save-btn {
+  padding: 7px 22px;
+  background: #269b57;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+
+.admin-save-btn:hover {
+  background: #247e4c;
+}
+
+.admin-cancel-btn {
+  padding: 7px 14px;
+  background: #fff;
+  color: #269b57;
+  border: 1.4px solid #269b57;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+
+.admin-cancel-btn:hover {
+  background: #e8f7ee;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8fdfb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 11px 13px;
+  border-bottom: 1.2px solid #e4efea;
+  text-align: left;
+  font-size: 1.05rem;
+  color: #070707;
+}
+
+.admin-table th {
+  background: #257f49;
+  font-weight: 700;
+  color: #f3f6f5;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-action-btn {
+  background: #f4fef6;
+  color: #269b57;
+  border: 1.3px solid #b2e9c8;
+  border-radius: 7px;
+  padding: 6px 15px;
+  font-weight: 600;
+  margin-right: 7px;
+  cursor: pointer;
+  transition: background 0.13s, border 0.13s;
+}
+
+.admin-action-btn:hover {
+  background: #e8f7ee;
+  border: 1.3px solid #247e4c;
+}
+
+.admin-delete-btn {
+  background: #fff5f5;
+  color: #d23f3f;
+  border: 1.3px solid #ffd5d5;
+}
+
+.admin-delete-btn:hover {
+  background: #fff0f0;
+  border: 1.3px solid #e57373;
+}
+
+.admin-status {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+.admin-status-verified {
+  background: #e0faeb;
+  color: #22ab4f;
+  border: 1.1px solid #22ab4f;
+}
+
+.admin-status-pending {
+  background: #fff3e0;
+  color: #e69017;
+  border: 1.1px solid #ffb74d;
+}

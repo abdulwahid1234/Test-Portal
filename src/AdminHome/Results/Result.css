@@ -1,0 +1,227 @@
+.result-page {
+  background: #9dcfb8;;
+  height: 100vh;
+  padding: 30px 0 0 0;
+  color: #222;
+}
+
+.result-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto 16px auto;
+  padding: 0 28px;
+}
+
+.result-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2f855a;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.02em;
+}
+
+.result-controls {
+  display: flex;
+  /* max-width: 1150px; */
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 5px;
+  border-radius: 18px;
+  box-shadow: 0 2px 14px #269b5711, 0 1px 8px #269b570b;
+  margin: 15px;
+  border: 1.2px solid #d0ead7;
+}
+
+.result-search {
+  flex: 1 1 240px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1.3px solid #b2e9c8;
+  font-size: 1.08rem;
+  color: #222;
+  background: #f7faf8;
+  outline: none;
+  min-width: 220px;
+  transition: border 0.15s, background 0.13s;
+}
+.result-search:focus {
+  border: 1.7px solid #2f855a;;
+  background: #f4fef6;
+}
+
+.download-btn {
+  padding: 12px 26px;
+  background: #2f855a;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 1.03rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.16s, box-shadow 0.13s;
+  outline: none;
+  box-shadow: 0 2px 7px #269b5736;
+  letter-spacing: 0.02em;
+  opacity: 1;
+}
+.download-btn:disabled {
+  background: #e4efea;
+  color: #7f947f;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.download-btn:not(:disabled):hover {
+  background: #247e4c;
+}
+
+.category-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.category-select-wrap label {
+  color: #2f855a;
+  font-weight: 700;
+  font-size: 1.04rem;
+  letter-spacing: 0.01em;
+}
+
+.result-category {
+  border-radius: 8px;
+  padding: 9px 22px 9px 10px;
+  border: 1.4px solid #b2e9c8;
+  font-size: 1.08rem;
+  background: #f7faf8;
+  color: #269b57;
+  min-width: 115px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: border 0.13s, background 0.13s;
+  box-shadow: 0 1px 5px #269b5712;
+}
+.result-category:focus {
+  border: 2px solid #269b57;
+  background: #f4fef6;
+}
+
+.result-table-wrap {
+  max-width: 1150px;
+  margin: 15px;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 5px 32px #31b68513, 0 1.5px 8px #31b6850b;
+  padding: 5px;
+  border: 1.2px solid #e4efea;
+  overflow-x: auto;
+}
+
+.result-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: none;
+  border-radius: 22px;
+  margin: 0;
+  color: #222;
+}
+.result-table thead {
+  background: #e8f7ee;
+}
+.result-table th,
+.result-table td {
+  padding: 14px 14px;
+  border: 1px solid #e4efea;
+  text-align: left;
+  font-size: 1.04rem;
+}
+.result-table th {
+  font-weight: 800;
+  color: #2f855a;
+  background: #e8f7ee;
+  border-bottom: 2px solid #b2e9c8;
+  letter-spacing: 0.02em;
+}
+.result-table tr {
+  background: transparent;
+  transition: background 0.12s;
+}
+.result-table tr:nth-child(even) {
+  background: #f7faf8;
+}
+.result-table tr:hover td {
+  background: #e8f7ee;
+}
+
+.result-table td span {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 1150px) {
+  .result-header, .result-table-wrap {
+    max-width: 100vw;
+    padding: 0 5px;
+  }
+  .result-table th, .result-table td {
+    font-size: 0.99rem;
+    padding: 7px 5px;
+  }
+}
+@media (max-width: 600px) {
+  .result-controls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 11px 6px;
+  }
+  .result-header, .result-table-wrap {
+    padding: 0 1vw;
+  }
+  .result-table th, .result-table td {
+    font-size: 0.89rem;
+    padding: 6px 3px;
+  }
+}
+.result-table tr:hover td {
+  background: #c6f5de !important; /* Brighter green for strong feedback */
+  color: #19794b;
+  transition: background 0.18s, color 0.18s;
+}
+
+/* Optionally, animate the non-hover state back to normal */
+.result-table tr td {
+  transition: background 0.18s, color 0.18s;
+}
+.result-table tr.selected td {
+  background: #19794b !important;
+  color: #fff;
+}
+.download-btn:not(:disabled):hover,
+.download-btn:not(:disabled):focus {
+  background: #19794b;
+  color: #fff;
+  box-shadow: 0 4px 16px #269b5740;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.result-search:hover,
+.result-search:focus {
+  border: 2px solid #269b57;
+  background: #e8f7ee;
+  color: #269b57;
+}
+
+.result-category:hover,
+.result-category:focus {
+  border: 2px solid #269b57;
+  background: #e8f7ee;
+  color: #1ba858;
+}
+.result-table th:hover {
+  background: #d2ffe3;
+  color: #269b57;
+  transition: background 0.16s, color 0.16s;
+}

@@ -1,0 +1,470 @@
+.create-test-page {
+  padding: 10px;
+  background: transparent;
+  color: #222;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 15px;
+  background: #9dcfb8;
+  border-radius: 16px;
+  box-shadow: 0 2px 32px #11111122, 0 2px 10px #1e1f1e10;
+}
+
+.page-header h2 {
+  font-size: 2rem;
+  color: #2f855a;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.create-btn {
+  background: #2f855a;;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #269b571a;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.create-btn:hover {
+  background: #247e4c;
+  filter: brightness(1.04);
+}
+
+.tests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 5px;
+}
+
+.test-modern-card {
+  background: #fcfcfc;;
+  border-radius: 16px;
+  box-shadow: 0 2px 32px #11111122, 0 2px 10px #1e1f1e10;
+  padding: 18px;
+  width: 350px;
+  min-height: 245px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  position: relative;
+  border: 1.2px solid #fbfbfb;
+  transition: box-shadow 0.14s, transform 0.13s, border-color 0.14s;
+}
+.test-modern-card:hover {
+  box-shadow: 0 10px 32px #269b5735;
+  transform: translateY(-3px) scale(1.014);
+  border-color: #269b57;
+}
+
+.test-card-image {
+  width: 100%;
+  height: 90px;
+  background: #e8f7ee;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 2.3rem;
+}
+.test-img-preview {
+  width: 74px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 1.2px solid #b2e9c8;
+  background: #e8f7ee;
+}
+
+.test-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+.test-title {
+  font-weight: 800;
+  font-size: 1.13rem;
+  color: #000000;
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+}
+.test-location {
+  color: #2f855a;;
+  font-size: 1.01rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+
+.test-card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1px;
+}
+.test-property {
+  display: flex;
+  align-items: center;
+  font-size: 1.02rem;
+  color: #000000;
+  gap: 7px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.test-property svg {
+  color: #2f855a;
+  font-size: 1.17rem;
+}
+
+.test-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.footer-badge {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 5px;
+  min-width: 80px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.11s, box-shadow 0.12s;
+  user-select: none;
+  box-shadow: 0 2px 7px #269b5710;
+}
+.footer-badge.active {
+  background: #e8f7ee;
+  color: #269b57;
+  border: 1.1px solid #b2e9c8;
+  height: 26px;
+}
+.footer-badge.inactive {
+  background: #fbeaea;
+  color: #e14a4a;
+  border: 1.1px solid #eec5c5;
+}
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 7px;
+  box-shadow: 0 2px 7px #269b5710;
+}
+.active-dot {
+  background: #1fd16b;
+}
+.inactive-dot {
+  background: #f03738;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edit-btn, .delete-btn, .duplicate-btn {
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.13s, color 0.13s;
+  background: #f6faf7;
+  box-shadow: 0 1px 5px #269b5707;
+  color: #269b57;
+}
+.edit-btn:hover {
+  background: #e8f7ee;
+  color: #1ba858;
+}
+.delete-btn {
+  color: #b92125;
+}
+.delete-btn:hover {
+  background: #fbeaea;
+  color: #b92125;
+}
+.duplicate-btn {
+  color: #247e4c;
+}
+.duplicate-btn:hover {
+  background: #e8f7ee;
+  color: #1ba858;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(36, 110, 80, 0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+.modal-content {
+  background: #9dcfb8;;
+  border-radius: 20px;
+  box-shadow: 0 10px 34px #269b5718, 0 3px 9px #269b570e;
+  width: 340px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: modalShow 0.18s;
+  border: 1.1px solid #b2e9c8;
+}
+@keyframes modalShow {
+  from { transform: scale(0.97) translateY(18px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+.modal-content h3 {
+  margin: 0;
+  color: #269b57;
+  font-size: 1.19rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.modal-content label {
+  font-weight: 600;
+  color: #060606;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.03rem;
+}
+.modal-content label span {
+  color: #f94d4d;
+  margin-left: 2px;
+}
+.modal-content input,
+.modal-content textarea {
+  width: 92%;
+  border-radius: 8px;
+  border: 1.2px solid #b2e9c8;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 4px;
+  /* margin-bottom: 11px; */
+  outline: none;
+  transition: border 0.14s, background 0.13s;
+  background: #e6f5ee;
+  color: #0a0a0a;
+}
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border: 1.6px solid #269b57;
+  background: #f4fef6;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 2px;
+}
+.cancel-btn {
+  background: #e8f7ee;
+  color: #269b57;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+.cancel-btn:hover {
+  background: #fbeaea;
+  color: #b92125;
+}
+.submit-btn {
+  background: #269b57;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 19px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 0.98rem;
+  box-shadow: 0 1px 7px #269b570e;
+}
+.submit-btn:hover {
+  background: #247e4c;
+  color: #fff;
+}
+
+.no-tests {
+  color: #141313;
+  font-size: 1.55rem;
+  margin-top: 32px;
+  margin-left: 10px;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 1150px) {
+  .tests-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+}
+@media (max-width: 750px) {
+  .test-modern-card {
+    width: 98vw;
+    max-width: 350px;
+    min-width: 210px;
+    padding: 15px;
+  }
+  .page-header, .tests-list {
+    padding: 0 2vw;
+  }
+}
+@media (max-width: 400px) {
+  .modal-content {
+    width: 98vw;
+    padding: 13px 2vw 11px 2vw;
+  }
+}
+/* ----------- CARD & BUTTON HOVERS (enhanced) ----------- */
+
+/* Test card hover already present, let's add slight scale on mobile as well */
+.test-modern-card:hover,
+.test-modern-card:focus-within {
+  box-shadow: 0 10px 38px #269b5738;
+  transform: translateY(-3px) scale(1.018);
+  border-color: #269b57;
+}
+
+/* Footer badge hover */
+.footer-badge:hover {
+  background: #d0ead7;
+  color: #1ba858;
+  box-shadow: 0 1px 9px #269b5710;
+  filter: brightness(1.05);
+}
+
+/* Action buttons hover/focus (edit, delete, duplicate) */
+.edit-btn:hover, .edit-btn:focus {
+  background: #d0ead7;
+  color: #218e46;
+  transform: translateY(-2px) scale(1.06);
+}
+.delete-btn:hover, .delete-btn:focus {
+  background: #fde8e8;
+  color: #a81217;
+  transform: translateY(-2px) scale(1.06);
+  border: 1px solid #e14a4a33;
+}
+.duplicate-btn:hover, .duplicate-btn:focus {
+  background: #e6fff4;
+  color: #12b886;
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* Modal buttons hover/focus */
+.cancel-btn:focus {
+  outline: 2px solid #e14a4a55;
+}
+.submit-btn:focus {
+  outline: 2px solid #269b5760;
+}
+
+/* Card clickable effect for accessibility */
+.test-modern-card:active {
+  transform: scale(0.99);
+  box-shadow: 0 1px 6px #269b5735;
+  border-color: #1ba858;
+}
+
+/* Card focus (for keyboard navigation) */
+.test-modern-card:focus {
+  outline: 2px solid #269b57bb;
+  box-shadow: 0 10px 36px #269b5746;
+}
+
+/* ----------- INPUT FOCUS / HOVER ENHANCEMENT ----------- */
+.modal-content input:hover,
+.modal-content textarea:hover {
+  border: 1.6px solid #1ba858;
+  background: #e8f7ee;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border: 1.8px solid #269b57;
+  background: #f3fff9;
+  outline: none;
+}
+
+/* Test image preview hover effect */
+.test-img-preview:hover {
+  box-shadow: 0 4px 18px #269b5740;
+  border-color: #269b57;
+  filter: brightness(1.07);
+}
+
+/* ----------- NAVIGATIONAL BUTTONS ----------- */
+.create-btn:focus {
+  outline: 2px solid #269b57bb;
+  background: #2f855a;;
+  color: #fff;
+  filter: brightness(1.04);
+  box-shadow: 0 4px 14px #269b5744;
+}
+
+/* Animate .create-btn on hover */
+.create-btn:hover {
+  background: #218e46;
+  color: #fff;
+  filter: brightness(1.08);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 24px #269b5733;
+}
+
+/* No tests hover for fun (optional) */
+.no-tests:hover {
+  color: #1ba858;
+  filter: brightness(1.10);
+  text-shadow: 0 1px 8px #269b5710;
+}
+
+/* ----------- MODAL CLOSE HOVER (if you add a close button) ----------- */
+.modal-close:hover, .modal-close:focus {
+  color: #b92125 !important;
+  background: #fdeaea !important;
+}
+
+/* Extra: smooth transitions for all interactive elements */
+.edit-btn, .delete-btn, .duplicate-btn,
+.footer-badge, .create-btn, .cancel-btn, .submit-btn {
+  transition:
+    background 0.14s, 
+    color 0.14s,
+    box-shadow 0.16s,
+    border 0.13s,
+    filter 0.14s,
+    transform 0.14s;
+}

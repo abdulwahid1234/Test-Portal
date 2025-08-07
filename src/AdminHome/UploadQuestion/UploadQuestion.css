@@ -1,0 +1,357 @@
+.uq-container-inline {
+  height: 100vh;
+  background: #9dcfb8;;
+  padding: 15px;
+  color: #269b57;
+ width: 98%;
+}
+
+/* Header section */
+.uq-header-inline {
+  width: 78vw;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  background: white;
+  padding: 15px;
+  align-items: center;
+}
+
+.uq-label {
+  font-weight: 700;
+  color: #247e4c;
+  font-size: 1.09rem;
+  letter-spacing: 0.01em;
+}
+.uq-value {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+  margin-right: 16px;
+}
+
+/* Upload/Statistics button row */
+.uq-btn-row {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+.uq-main-btn {
+  font-size: 1.07rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  min-width: 130px;
+  padding: 12px 0;
+  cursor: pointer;
+  box-shadow: 0 3px 14px #269b5712;
+  transition: background 0.15s, filter 0.12s;
+  background: #2f855a;;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+.uq-upload-btn {
+  background: #2f855a;;
+  color: #fff;
+  box-shadow: 0 2px 10px #269b5717;
+}
+.uq-upload-btn.active, .uq-upload-btn:hover {
+  background: #2f855a;;
+  color: #fff;
+}
+.uq-stat-btn {
+  background: #2f855a;;
+  color: #ffffff;
+}
+.uq-stat-btn.active, .uq-stat-btn:hover {
+  background: #c8f2d6;
+  color: #1ba858;
+}
+
+/* Card for stats & upload */
+.uq-box, .uq-uploadbox {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 22px #269b5712, 0 2px 8px #269b570e;
+  /* min-width: 340px;
+  max-width: 950px; */
+  margin: 10px;
+  padding: 15px;
+  border: 1.2px solid #ffffff;
+  color: #269b57;
+  position: relative;
+  transition: all 0.15s;
+}
+.uq-uploadbox {
+  padding: 10px;
+}
+
+/* File upload bar */
+.uq-uploadbox .uq-file-btn-table {
+  background: #2f855a;
+  color:  white;
+  font-size: 1.01rem; 
+  font-weight: 700 ;
+  padding: 8px 28px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 2px 8px #269b5713;
+  cursor: pointer;
+  margin-right: 7px;
+  margin-bottom: 10px !important;
+  transition: background 0.13s, filter 0.11s;
+}
+.uq-uploadbox .uq-file-btn-table:hover {
+  background: #1ba858 !important;
+  color: #fff !important;
+}
+.uq-uploadbox .uq-file-name {
+  display: block;
+  color: #000000;
+  font-size: 1.01rem;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+/* Error */
+.uq-error {
+  color: #e14a4a;
+  margin-bottom: 10px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Stats */
+.uq-stats-box {
+  min-width: 320px;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #2f855a;
+  border: 1.1px solid #050505;
+  box-shadow: 0 2px 7px #1c1c1c0b;
+  border-radius: 12px;
+}
+.uq-stats-row {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  color: #269b57;
+  padding: 22px 18px 17px 18px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.uq-stats-row .uq-label {
+  color: #000000;
+  font-size: 1.02rem;
+}
+.uq-stats-row .uq-value {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.04rem;
+}
+.uq-loader {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  border: 2px solid #d0ead7;
+  border-radius: 50%;
+  border-top: 2px solid #269b57;
+  animation: uq-spin 0.9s linear infinite;
+  margin-right: 5px;
+}
+@keyframes uq-spin {
+  100% { transform: rotate(360deg);}
+}
+
+/* Table */
+.uq-table-wrapper {
+  margin-top: 13px;
+  overflow-x: auto;
+  background: none;
+}
+.uq-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 670px;
+  background: none;
+  box-shadow: 0 1px 7px #269b5711;
+  color: #181818; /* <-- black text everywhere */
+}
+.uq-table thead {
+  background: #9dcfb8;;
+}
+.uq-table th, .uq-table td {
+  border: 1px solid #000000;
+  padding: 10px 10px;
+  font-size: 0.99rem;
+  text-align: left;
+  vertical-align: top;
+  color: #181818; /* <-- black text everywhere */
+}
+.uq-table th {
+  font-weight: 800;
+  color: #ffffff;
+  background: #2f855a;;;
+}
+.uq-table td {
+  color: #181818;
+  background:#b2e9c88f;
+}
+.uq-table .uq-correct-answer {
+  font-weight: 800;
+  color: #1ba858;
+}
+
+/* Wider question column */
+.uq-question-cell {
+  cursor: pointer;
+  max-width: 400px;   /* increased from 210px */
+  min-width: 180px;   /* increased from 60px */
+  word-break: break-word;
+  color: #181818;     /* black for long questions too */
+}
+.uq-expand-link {
+  color: #247e4c;
+  margin-left: 6px;
+  font-size: 0.96em;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1050px) {
+  .uq-header-inline, .uq-box, .uq-uploadbox {
+    max-width: 100vw;
+    padding: 10px 1vw 16px 1vw;
+  }
+  .uq-table th, .uq-table td {
+    font-size: 0.93rem;
+    padding: 6px 6px;
+  }
+}
+@media (max-width: 650px) {
+  .uq-header-inline, .uq-box, .uq-uploadbox {
+    padding: 7px 1vw 11px 1vw;
+  }
+  .uq-table th, .uq-table td {
+    font-size: 0.87rem;
+    padding: 5px 3px;
+  }
+  .uq-btn-row {
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 9px;
+  }
+}
+
+
+.uq-box {
+  background: #2f855a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.uq-stats-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.uq-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.uq-stats-row > div {
+  background: #9dcfb8;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.uq-label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.uq-value {
+  color: #2b3d57;
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.uq-value span {
+  font-size: 1.1rem;
+  color: #33cc99;
+}
+
+.uq-loader {
+  display: inline-block;
+  border: 3px solid transparent;
+  border-top-color: #33cc99;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+  margin-right: 5px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.uq-stats-row div span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #4b4b4b;
+}
+
+.uq-stats-row div i {
+  font-size: 1.3rem;
+  color: #33cc99;
+  margin-right: 8px;
+}
+
+.uq-stats-row div .uq-label {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.uq-stats-row div .uq-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.uq-stats-row div span:last-child {
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.uq-stats-row .stats-row-header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1d3557;
+  border-bottom: 2px solid #33cc99;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
