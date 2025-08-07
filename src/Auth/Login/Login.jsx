@@ -60,12 +60,12 @@ const Login = () => {
         <p>
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
-        <div>
+        <div style={{ marginTop: "2px", color: "black" }}>
       <span>For SuperAdmin: akbar@gmail.com </span>
       <br /><span>Password: qwert</span>
       </div>
       <br />
-      <div><span>For Admin: waleed@gmail.com </span><br />
+      <div style={{ marginTop: "2px", color: "black" }}><span>For Admin: waleed@gmail.com </span><br />
       <span>Password: 12345</span></div>
       </form>
       
